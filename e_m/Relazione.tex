@@ -22,6 +22,7 @@
 \vspace{9pt}
 \begin{abstract}
     \noindent
+    
 \vspace{20pt}
 \hrule
 \end{abstract}
@@ -161,22 +162,57 @@ L’incertezza sul rapporto carica-massa elettrone, a partire da quella sul coef
 
 Di seguito sono riportati gli accordi rispetto al modello lineare ottenuti tramite la regressione, le misurazioni del rapporto carica-massa dell’elettrone con rispettiva incertezza e compatibilità col valore internazionalmente accettato di \( 1.7588 \times 10^{11} \, \text{C/kg} \):
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c|c|c|c|}
-        \hline
-        \textbf{Configurazione} & \(\frac{e}{m} \, (\text{C/kg})\) & \textbf{Accordo (\%)} & \textbf{Compatibilità (\%)} \\
-        \hline
-        Ortogonale & \( (1.75 \pm 0.23) \times 10^{11} \) & \( 31\% \) & \( 97\% \) \\
-        \hline
-        Parallelo & \( (1.79 \pm 0.27) \times 10^{11} \) & \( 83\% \) & \( 90\% \) \\
-        \hline
-        Antiparallelo & \( (1.95 \pm 0.27) \times 10^{11} \) & \( 71\% \) & \( 49\% \) \\
-        \hline
-    \end{tabular}
-    \caption{Misurazioni del rapporto carica-massa dell'elettrone}
-    \label{tab:em_measurements}
-\end{table}
+\begin{itemize}
+    \item \textbf{Configurazione Ortogonale}: \( (1.75 \pm 0.17) \times 10^{11} \, \text{C/kg}\)
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{regr_ortogonale.png}
+        \caption{Regressione lineare in configurazione ortogonale.}
+        \label{fig:regr_ortogonale}
+    \end{figure}
+    \textbf{Accordo}: \(3\%\) \\
+    \textbf{Compatibilità}: \(95\%\)
+    \vspace{0.5cm}
+
+    \item \textbf{Configurazione Antiparallelo}: \( (1.79 \pm 0.20) \times 10^{11} \, \text{C/kg}\)
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{regr_antiparallelo.png}
+        \caption{Regressione lineare in configurazione antiparallelo.}
+        \label{fig:regr_antiparallelo}
+    \end{figure}
+    \textbf{Accordo}: \(48\%\) \\
+    \textbf{Compatibilità}: \(87\%\)
+    \vspace{0.5cm}
+
+    \item \textbf{Configurazione Parallelo}: \( (1.95 \pm 0.20) \times 10^{11} \, \text{C/kg}\)
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{regr_parallelo.png}
+        \caption{Regressione lineare in configurazione parallelo.}
+        \label{fig:regr_parallelo}
+    \end{figure}
+    \textbf{Accordo}: \(28\%\) \\
+    \textbf{Compatibilità}: \(35\%\)
+\end{itemize}
+L’accordo del \(3\%\) dei punti sperimentali della misura nella configurazione perpendicolare con il modello teorico secondo cui i punti sperimentali debbano seguire un andamento lineare è ritenibile insoddisfacente (in quanto inferiore alla soglia convenzionale del \(5\%\)). Tuttavia, l’andamento lineare teorico è confermato con accordi ritenuti ampiamente accettabili, secondo la soglia percentuale di riferimento, nelle due misure successive dove il test del \( \chi^2 \) produce un accordo del \(48\%\) e del \(28\%\).
+
+% \begin{table}[H]
+%     \centering
+%     \begin{tabular}{|c|c|c|c|}
+%         \hline
+%         \textbf{Configurazione} & \(\frac{e}{m} \, (\text{C/kg})\) & \textbf{Accordo (\%)} & \textbf{Compatibilità (\%)} \\
+%         \hline
+%         Ortogonale & \( (1.75 \pm 0.23) \times 10^{11} \) & \( 31\% \) & \( 97\% \) \\
+%         \hline
+%         Parallelo & \( (1.79 \pm 0.27) \times 10^{11} \) & \( 83\% \) & \( 90\% \) \\
+%         \hline
+%         Antiparallelo & \( (1.95 \pm 0.27) \times 10^{11} \) & \( 71\% \) & \( 49\% \) \\
+%         \hline
+%     \end{tabular}
+%     \caption{Misurazioni del rapporto carica-massa dell'elettrone}
+%     \label{tab:em_measurements}
+% \end{table}
 
 
 \section{Misura del campo magnetico terrestre}
@@ -230,7 +266,97 @@ Si è infine ottenuto una misura della componente orizzontale del campo magnetic
     B_T = (44.1 \pm 0.4) \, \mu\text{T}
 \]
 
+\section{Conclusioni e correzioni}
 
+Una volta determinata l’intensità della componente orizzontale del campo magnetico terrestre, è possibile correggere le misure del rapporto carica-massa dell’elettrone ottenute dalla conduzione dell’esperimento di Thompson nelle due configurazioni in cui il campo magnetico terrestre risulta, rispettivamente, parallelo e antiparallelo al campo magnetico generato dalle due bobine. 
+Difatti, non considerando la presenza del campo magnetico terrestre nel caso in cui esso sia parallelo al campo delle bobine, si sottostima il campo magnetico che avvertono gli elettroni di cui è stato preso in esame il moto. Il che, in linea teorica, comporta che ci si attenda un valore sovrastimato del rapporto carica-massa dell’elettrone, per via della relazione:
 
+\begin{equation}
+    \frac{e}{m} = \frac{2 \Delta V}{B^2 R^2} \label{eq:em_relation}
+\end{equation}
+
+Difatti, la misura del rapporto carica-massa dell’elettrone nella configurazione parallela è risultata:
+
+\[
+(1.95 \pm 0.20) \times 10^{11} \, \text{C/kg}
+\]
+che sovrastima la misurazione perpendicolare:
+\[
+(1.75 \pm 0.17) \times 10^{11} \, \text{C/kg}
+\]
+e il valore accettato di:
+\[
+1.7588 \times 10^{11} \, \text{C/kg}.
+\]
+
+Analogamente, trascurando la presenza del campo magnetico terrestre nel caso in cui esso sia antiparallelo al campo generato dalle bobine, si arriva a sovrastimare il campo magnetico a cui sono soggetti gli elettroni. Ciò implica che ci si attenda un risultato sottostimato del rapporto carica-massa dell’elettrone. 
+
+Si è pertanto stimata, con metodi statistici che coinvolgono la distribuzione gaussiana (che si ipotizza venga eseguita dalle misure effettuate in laboratorio), la compatibilità con l’eventualità che il valore misurato del rapporto carica-massa dell’elettrone nella configurazione antiparallela (in corrispondenza di cui si è ottenuta la misura):
+
+\[
+(1.79 \pm 0.20) \times 10^{11} \, \text{C/kg}
+\]
+sottostimi la misurazione perpendicolare (ottenuta di:
+\[
+(1.75 \pm 0.17) \times 10^{11} \, \text{C/kg})
+\]
+e il valore vero (di:
+\[
+1.7588 \times 10^{11} \, \text{C/kg}).
+\]
+
+Ottenendo probabilità non trascurabili circa pari al \(43\%\).
+
+Si è quindi sommato il valore del campo magnetico terrestre ottenuto al campo delle bobine nel caso di configurazione parallela, e lo si è invece sottratto nel caso della configurazione antiparallela:
+
+\begin{align}
+    B_{\text{TOT}, \parallel} &= B_{\text{Bobine}} + B_T \label{eq:B_tot_parallel} \\
+    B_{\text{TOT}, \text{anti}\parallel} &= B_{\text{Bobine}} - B_T \label{eq:B_tot_antiparallel}
+\end{align}
+
+L’incertezza sul campo magnetico risultante è ottenibile mediante somma in quadratura dell’incertezza sul campo magnetico generato dalle bobine, precedentemente determinata, e quella del campo magnetico terrestre, anch’essa determinata precedentemente:
+
+\begin{equation}
+    \sigma_{B_{\text{TOT}}} = \sqrt{\sigma_{B_{\text{Bobine}}}^2 + \sigma_{B_T}^2} \label{eq:B_tot_uncertainty}
+\end{equation}
+
+Rieffettuando le regressioni relative a queste due configurazioni, si ottiene, come previsto dalla formula, un aumento del valore ottenuto del rapporto carica-massa dell’elettrone nel caso di configurazione antiparallela, e una diminuzione del valore ottenuto del rapporto carica-massa dell’elettrone nel caso di configurazione parallela.
+
+Di seguito i risultati ottenuti senza trascurare il campo magnetico terrestre nelle configurazioni parallelo e antiparallelo:
+
+\begin{itemize}
+    % \item \textbf{Configurazione Ortogonale}: \( (1.75 \pm 0.17) \times 10^{11} \, \text{C/kg}\)
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.6\textwidth]{.png}
+    %     \caption{Regressione lineare in configurazione ortogonale.}
+    %     \label{fig:correz_regr_ortogonale}
+    % \end{figure}
+    % \textbf{Accordo}: \(3\%\) \\
+    % \textbf{Compatibilità}: \(95\%\)
+    % \vspace{0.5cm}
+
+    \item \textbf{Configurazione Antiparallelo}: \( (1.84 \pm 0.20) \times 10^{11} \, \text{C/kg}\)
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{correz_regr_antiparallelo.png}
+        \caption{Regressione lineare in configurazione antiparallelo.}
+        \label{fig:correz_regr_antiparallelo}
+    \end{figure}
+    \textbf{Accordo}: \(44\%\) \\
+    \textbf{Compatibilità}: \(70\%\)
+    \vspace{0.5cm}
+
+    \item \textbf{Configurazione Parallelo}: \( (1.90 \pm 0.20) \times 10^{11} \, \text{C/kg}\)
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{correz_regr_parallelo.png}
+        \caption{Regressione lineare in configurazione parallelo.}
+        \label{fig:correz_regr_parallelo}
+    \end{figure}
+    \textbf{Accordo}: \(32\%\) \\
+    \textbf{Compatibilità}: \(48\%\)
+\end{itemize}
+Si noti come la compatibilità, con il valore del valore accettato, della misura nella configurazione parallela del rapporto carica-massa elettrone aumenti, passando dal \(35\%\) al \(48\%\), in seguito alla correzione del campo magnetico terrestre che produce una diminuzione il valore sovrastimato. 
 
 \end{document}
