@@ -23,7 +23,7 @@
 \begin{abstract}
     \noindent
     Utilizzando lo spettrometro a reticolo sono state misurate le lunghezze d’onda dello spettro di emissione del mercurio, ottenendo i seguenti risultati: \( \lambda_{\text{rosso}} = (6240 \pm 3) \, \text{\AA} \), \( \lambda_{\text{giallo1}} = (5791.5 \pm 1.6) \, \text{\AA} \), \( \lambda_{\text{giallo2}} = (5770.8 \pm 1.7) \, \text{\AA} \), \( \lambda_{\text{verde}} = (5461.1 \pm 2.0) \, \text{\AA} \), \( \lambda_{\text{azzurro}} = (4963.5 \pm 2.7) \, \text{\AA} \), \( \lambda_{\text{indaco}} = (4359.6 \pm 1.8) \, \text{\AA} \), \( \lambda_{\text{violetto1}} = (4079.9 \pm 2.8) \, \text{\AA} \), \( \lambda_{\text{violetto2}} = (4046.3 \pm 2.2) \, \text{\AA} \). 
-    In seguito è stato misurato il potere dispersivo \( D \) e risolutivo \( R \) dell’apparato, ottenendo \( D = (1.0343 \pm 0.0003) \times 10^6 \, \text{rad/m} \) per alcune coppie di lunghezze d'onda e \( R = 7318 \pm 6 \) per il doppietto del sodio. L'ortogonalizzazione del reticolo e il calcolo del passo \( d \) \((3.3790 \pm 0.0007) \, \mu\text{m}\) hanno confermato la precisione del sistema sperimentale. I risultati mostrano una buona compatibilità con i valori noti, evidenziando l'efficacia del metodo utilizzato.
+    In seguito è stato misurato il potere dispersivo \( D \) e risolutivo \( R \) dell’apparato, ottenendo \( D = (1.0343 \pm 0.0003) \times 10^6 \, \text{rad/m} \) per alcune coppie di lunghezze d'onda e \( R = 7318 \pm 6 \) per il doppietto del sodio. L'ortogonalizzazione del reticolo e il calcolo del passo \( d \) \((3.3790 \pm 0.0007) \, \mu\text{m}\) hanno confermato la precisione del sistema sperimentale. I risultati mostrano una compatibilità superiore al \(19\%\) con i valori noti, evidenziando l'efficacia del metodo utilizzato.
 \vspace{20pt}
 \hrule
 \end{abstract}
@@ -34,7 +34,7 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{image.png}
+    \includegraphics[width=0.5\textwidth]{apparato.png}
     \caption{Apparato sperimentale}
     \label{fig:camera_millikan}
 \end{figure}
@@ -49,9 +49,9 @@ Prima di procedere con le misurazioni è necessario regolare l’apertura del co
 Si posiziona ora la sorgente di luce dietro al collimatore e il cannocchiale davanti ad esso, in modo che guardando nel cannocchiale sia possibile osservare una linea luminosa. Ruotando la rotella del collimatore si mette a fuoco la linea e si cerca di renderla abbastanza fine, per avere misure più precise, ma non eccessivamente, poiché si rischia di non riuscire ad osservare la luce diffratta ad ordini più alti.  
 Dopo aver posizionato il reticolo sull’apposito supporto, è possibile procedere con l’ortogonalizzazione del reticolo, come spiegato nel paragrafo \ref{sec:ortogonalizzazione}.
 \section{Precisazioni sulle misurazioni angolari}
-Ogni misurazione angolare è stata presa tramite il nonio integrato nell’apparato fornito in dotazione, che consente di leggere gli angoli in gradi sessagesimali (ovvero con i sottomultipli del grado che sono rappresentati dai primi). Dunque, ogni angolo misurato tramite il nonio è stato convertito in gradi sessadecimali, esprimendo i gradi in forma decimale convertendo i primi in frazioni decimali di grado, tramite divisione per 60 dei valori misurati in primi, siccome un primo equivale ad un sessantesimo di grado. Con la stessa conversione, le incertezze sulle misurazioni degli angoli, stabilite in primi, sono state trasformate in gradi. Eventualmente, i valori angolari misurati e calcolati, così come le loro incertezze, nell’esperimento sono stati convertiti in radianti (ciò per via dell’accettazione di angoli espressi in radianti da parte dei calcolatori impiegati nel calcolo delle funzioni
+Ogni misurazione angolare è stata presa tramite il nonio integrato nell’apparato fornito in dotazione, che consente di leggere gli angoli in gradi sessagesimali (ovvero con i sottomultipli del grado che sono rappresentati dai primi). Dunque, ogni angolo misurato tramite il nonio è stato convertito in gradi sessadecimali, esprimendo i gradi in forma decimale convertendo i primi in frazioni decimali di grado, tramite divisione per 60 dei valori misurati in primi, siccome un primo equivale ad un sessantesimo di grado. Con la stessa conversione, le incertezze sulle misurazioni degli angoli, stabilite in primi, sono state trasformate in gradi. Eventualmente, i valori angolari misurati e calcolati, così come le loro incertezze, nell’esperimento sono stati convertiti in radianti (ciò per via dell’accettazione di angoli espressi in radianti da parte dei calcolatori impiegati nel calcolo delle funzioni trigonometriche)
 \[
-\frac{\theta (^\circ)}{360^\circ} = \frac{\theta (\text{rad})}{2\pi},
+\frac{\theta (^\circ)}{360^\circ} = \frac{\theta (\text{rad})}{2\pi}
 \]
 da cui:
 \[
@@ -78,14 +78,13 @@ Per effettuare la misura del passo del reticolo si è impiegata la stessa lampad
 \[
 5890 \, \text{\AA} \quad \text{e} \quad 5896 \, \text{\AA}.
 \]
-(Nel caso in cui si ipotizzasse, sui valori forniti delle lunghezze d’onda del doppietto, un’incertezza di un’unità sull’ultima cifra significativa, ovvero un’incertezza di \( 1 \, \text{\AA} \), l’incertezza percentuale sulle lunghezze d’onda risulterebbe pari a \( 0.02 \, \% \), ovvero dieci volte inferiore rispetto all’incertezza relativa sulle misurazioni angolari, che risulta pari a \( 0.2 \, \% \); dunque la prima sarebbe ritenibile trascurabile rispetto alla seconda). 
 Il procedimento di questa misurazione è basato sull’applicazione della seguente relazione nota, che vale nel fenomeno considerato e che lega la posizione angolare \( \theta \), rispetto al centro, dei massimi di intensità luminosa di una certa lunghezza d’onda \( \lambda \) e di ordine \( k \), impiegando un reticolo di passo \( d \):
 \[
 d = \frac{k\lambda}{\sin(\theta)}.
 \]
 Da cui, l’incertezza su \( d \), a partire dall’incertezza su \( \theta \), sempre stimata pari a 2 primi, è calcolabile, grazie alla formula di propagazione delle incertezze, con il seguente calcolo:
 \[
-\sigma_d = k\lambda \cot(\theta) \sin(\theta) \sigma_\theta.
+\sigma_d = \frac{k\lambda \cot(\theta)}{\sin(\theta)} \sigma_\theta.
 \]
 Dunque, si è misurato per 6 volte, a diversi ordini, la posizione angolare di una delle due lunghezze d’onda del sodio, in modo da calcolare 6 stime di \( d \), di cui si è calcolata la media pesata, ottenendo il risultato:
 \[
@@ -98,7 +97,7 @@ d = (3.3790 \pm 0.0007) \, \mu\text{m}.
 
 Dopo aver misurato il passo del reticolo è possibile realizzare l’obiettivo dell’esperimento, che consiste nel determinare le lunghezze d’onda che compongono lo spettro di emissione del mercurio.
 
-Al passaggio di un’onda luminosa attraverso le fenditure del reticolo, le onde (caratterizzate da fronti sferici ma che a distanze sufficientemente grandi sono approssimabili come piani) in fase e coerenti che originano in corrispondenza di ognuna delle fenditure, secondo il principio di Huygens, interferiscono in modo completamente costruttivo nello spazio soltanto in corrispondenza di determinate posizioni angolari \( \theta_k \) (il che consente di visualizzare il centro della banda luminosa a tali posizioni angolari, dove l’intensità luminosa assume un massimo), dipendenti dal passo \( d \) del reticolo attraversato dalla luce e dalla lunghezza d’onda \( \lambda \) di questa.
+Al passaggio di un’onda luminosa attraverso le fenditure del reticolo, le onde (caratterizzate da fronti sferici ma che a distanze sufficientemente grandi sono approssimabili come piani) in fase e coerenti che originano, secondo il principio di Huygens, in corrispondenza di ognuna delle fenditure interferiscono in modo completamente costruttivo nello spazio soltanto in corrispondenza di determinate posizioni angolari \( \theta_k \) (il che consente di visualizzare il centro della banda luminosa a tali posizioni angolari, dove l’intensità luminosa assume un massimo), dipendenti dal passo \( d \) del reticolo attraversato dalla luce e dalla lunghezza d’onda \( \lambda \) di questa.
 
 Vale nello specifico la relazione già riportata sopra:
 
@@ -126,25 +125,18 @@ Di seguito riportate le lunghezze d’onda misurate per ogni colore dello spettr
 
 \begin{table}[H]
     \centering
-    \begin{tabular}{|c|c|}
+    \begin{tabular}{cc}
     \hline
     \textbf{Colore} & \textbf{Lunghezza d'onda} \(\lambda \, [\text{\AA}]\) \\ 
     \hline
     Rosso & \( (6240 \pm 3) \, \text{\AA} \) \\ 
-    \hline
-    Giallo (variante 1) & \( (5791.5 \pm 1.6) \, \text{\AA} \) \\ 
-    \hline
-    Giallo (variante 2) & \( (5770.8 \pm 1.7) \, \text{\AA} \) \\ 
-    \hline
+    Giallo 1 & \( (5791.5 \pm 1.6) \, \text{\AA} \) \\ 
+    Giallo 2 & \( (5770.8 \pm 1.7) \, \text{\AA} \) \\ 
     Verde & \( (5461.1 \pm 2.0) \, \text{\AA} \) \\ 
-    \hline
     Azzurro & \( (4963.5 \pm 2.7) \, \text{\AA} \) \\ 
-    \hline
     Indaco & \( (4359.6 \pm 1.8) \, \text{\AA} \) \\ 
-    \hline
-    Violetto (variante 1) & \( (4079.9 \pm 2.8) \, \text{\AA} \) \\ 
-    \hline
-    Violetto (variante 2) & \( (4046.3 \pm 2.2) \, \text{\AA} \) \\ 
+    Violetto 1 & \( (4079.9 \pm 2.8) \, \text{\AA} \) \\ 
+    Violetto 2 & \( (4046.3 \pm 2.2) \, \text{\AA} \) \\ 
     \hline
     \end{tabular}
     \caption{Lunghezze d'onda misurate per i diversi colori dello spettro di emissione del mercurio.}
@@ -158,9 +150,9 @@ A seguire un esempio di set di misure (per il colore “indaco”):
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|c|c|c|c|}
+\begin{tabular}{ccccc}
 \hline
-Ordine \(k\)  & \(\Delta \theta \, [\text{rad}]\) & \(\sigma_{\Delta \theta} \, [\text{rad}]\) & \(\lambda \, [\text{m}]\) & \(\sigma_\lambda \, [\text{m}]\) \\ 
+\textbf{Ordine \(k\)}  & \textbf{\(\Delta \theta \)}\([\text{rad}]\) & \textbf{\(\sigma_{\Delta \theta}\)} \([\text{rad}]\) & \textbf{\(\lambda\)}  \([\text{m}]\) & \textbf{\(\sigma_\lambda\)} \([\text{m}]\) \\ 
 \hline
 1 & 0.1 & 0.00059 & \(4.561 \times 10^{-7}\) & \(2.0 \times 10^{-9}\) \\ 
 2 & 0.3 & 0.00059 & \(4.365 \times 10^{-7}\) & \(9.6 \times 10^{-9}\) \\ 
@@ -198,22 +190,16 @@ Dove l’incertezza su \( \theta_m \) è ottenibile sommando in quadratura le du
 Di seguito le misure del potere dispersivo del reticolo, relativo a coppie di lunghezza d’onda consecutive, ottenute tramite l’impiego della seconda formula:
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|c|}
+\begin{tabular}{cc}
 \hline
-Coppia di lunghezze d’onda & Potere dispersivo \( D \, [\text{rad}/\text{m}] \) \\ 
+\textbf{Coppia di lunghezze d’onda} & \textbf{\( D \)} \([\text{rad}/\text{m}] \) \\ 
 \hline
 Giallo1 - Giallo2 & \( (1.0343 \pm 0.0003) \times 10^6 \) \\ 
-\hline
 Violetto1 - Violetto2 & \( (9.5188 \pm 0.0019) \times 10^5 \) \\ 
-\hline
 Rosso - Giallo1 & \( (1.04995 \pm 0.00021) \times 10^6 \) \\ 
-\hline
 Giallo2 - Verde & \( (1.02395 \pm 0.00020) \times 10^6 \) \\ 
-\hline
 Verde - Azzurro & \( (1.00128 \pm 0.00019) \times 10^6 \) \\ 
-\hline
 Azzurro - Indaco & \( (9.7540 \pm 0.0019) \times 10^5 \) \\ 
-\hline
 Indaco - Violetto1 & \( (9.5754 \pm 0.0019) \times 10^5 \) \\ 
 \hline
 \end{tabular}
@@ -223,22 +209,16 @@ A questo punto è, in linea teorica, possibile calcolare i medesimi poteri dispe
 Di seguito sono mostrati i valori ottenuti:
 \begin{table}[H]
     \centering
-    \begin{tabular}{|c|c|}
+    \begin{tabular}{cc}
     \hline
-    Potere dispersivo \( D \, [\text{rad}/\text{m}] \) & Incertezza relativa \([\%]\) \\ 
+    \textbf{D} \([\text{rad}/\text{m}] \) & \textbf{\(\sigma_D\)} \([\text{rad}/\text{m}] \) \\ 
     \hline
     \( 1.0 \times 10^6 \) & \( 1.4 \times 10^6 \) \\ 
-    \hline
     \( 1.0 \times 10^6 \) & \( 4.0 \times 10^5 \) \\ 
-    \hline
     \( 1.050 \times 10^6 \) & \( 2.6 \times 10^4 \) \\ 
-    \hline
     \( 1.02 \times 10^6 \) & \( 4.0 \times 10^4 \) \\ 
-    \hline
     \( 1.001 \times 10^6 \) & \( 2.4 \times 10^4 \) \\ 
-    \hline
     \( 9.76 \times 10^5 \) & \( 1.9 \times 10^4 \) \\ 
-    \hline
     \( 9.6 \times 10^5 \) & \( 4.0 \times 10^4 \) \\ 
     \hline
     \end{tabular}
@@ -246,18 +226,14 @@ Di seguito sono mostrati i valori ottenuti:
     \end{table}
     
 
-È possibile valutare la compatibilità con le misure mostrate in precedenza, e appurare un accordo prossimo al \( 100\% \) per ogni misura. Tuttavia, si nota come le incertezze relative sulla prima e la seconda misurazione del potere dispersivo (relative rispettivamente ai due gialli e ai due violetti), condotte con il calcolo del rapporto tra \( \Delta\theta \) e \( \Delta\lambda \), risultino particolarmente elevate, ovvero:
-\begin{itemize}
-    \item\( 135\% \): la misura viene privata di significato;
-    \item\( 40\% \): comunque significativa ma con elevata incertezza relativa.
-\end{itemize}
+È possibile valutare la compatibilità con le misure mostrate in precedenza, e appurare un accordo prossimo al \( 100\% \) per ogni misura. Tuttavia, si nota come le incertezze relative sulla prima e la seconda misurazione del potere dispersivo (relative rispettivamente ai due gialli e ai due violetti), condotte con il calcolo del rapporto tra \( \Delta\theta \) e \( \Delta\lambda \), risultino particolarmente elevate, ovvero rispettivamente del \(135\%\) (che priva la misura di significato) e del \(40\%\) (le incertezze relative degli altri poteri dispersivi calcolati variano invece tra il \(2\%\) e il \(4\%\)).
 Le incertezze relative degli altri poteri dispersivi calcolati variano invece tra il \( 2\% \) e il \( 4\% \).
 Tali risultati sono spiegabili notando come lo scarto dei due valori di lunghezza d’onda considerati sia piccolo a tal punto che l’incertezza sui due \( \Delta\lambda \) risulti dello stesso ordine di grandezza, dell’ordine di \( 10^{-9} \, \text{m} \) (nanometri), del valore del \( \Delta\lambda \) stesso, producendo quindi un’incertezza relativa elevata.
 Tale problema potrebbe essere risolvibile eseguendo misure multiple (non una singola) dei \( \Delta\lambda \) all’ordine considerato e valutando l’incertezza sul \( \Delta\lambda \) con metodi statistici, a patto che si esegua un numero di misure sufficientemente elevato e sufficientemente precise.
 
 
 \section{Calcolo del potere risolutivo del reticolo}
-Un’altra grandezza tipica del reticolo, che è stata misurata utilizzando in questo caso la lampada ai vapori di sodio, è il potere risolutivo del reticolo, che quantifica la capacità del reticolo di risolvere lunghezze d’onda distinte, in modo che risultino separate apprezzabilmente dall’osservatore. Il criterio di Rayleigh stabilisce che due lunghezze d’onda risultano risolte dal reticolo, in modo apprezzabile per l’osservatore, nel caso in cui la posizione di massima intensità luminosa della lunghezza d’onda maggiore delle due oltrepassi la posizione del minimo di intensità dell’altra lunghezza d’onda.
+Un’altra grandezza tipica del reticolo, che è stata misurata utilizzando in questo caso la lampada ai vapori di sodio, è il potere risolutivo del reticolo, che quantifica la capacità del reticolo di risolvere lunghezze d’onda distinte, in modo che risultino separate apprezzabilmente dall’osservatore. Il criterio di Rayleigh stabilisce che due lunghezze d’onda risultano risolte dal reticolo, in modo apprezzabile per l’osservatore, nel caso in cui la posizione di massima intensità luminosa di una lunghezza d’onda oltrepassi la posizione del minimo di intensità dell’altra lunghezza d’onda.
 Siano \( \lambda_1 \) e \( \lambda_2 \) due lunghezze d’onda tali che \( \Delta\lambda = \lambda_1 - \lambda_2 \) sia pari al più piccolo scarto tra due lunghezze d’onda che il reticolo è in grado di risolvere; risultino quindi le loro frange distanziate secondo la condizione limite di Rayleigh.
 Il potere risolutivo del reticolo è definito come:
 \[
@@ -278,7 +254,7 @@ Il numero di fenditure del reticolo, ipotizzando che venga ognuna illuminata, è
 \[
 N = \text{int}\left(\frac{l}{d}\right).
 \]
-La larghezza \( l \) del reticolo è stata misurata con un micrometro dalla sensibilità di \( 20 \, \mu\text{m} \), valore assegnato all’incertezza sistematica sulla misura della larghezza del reticolo che è stata eseguita.
+La larghezza \( l \) del reticolo è stata misurata con un calibro dalla sensibilità di \( 20 \, \mu\text{m} \), valore assegnato all’incertezza sistematica sulla misura della larghezza del reticolo che è stata eseguita.
 L’incertezza su \( N \) si ottiene per propagazione dell’errore:
 \[
 \sigma_N = \sqrt{\left(\frac{\sigma_l}{d}\right)^2 + \left(\frac{l}{d^2}\sigma_d\right)^2}.
