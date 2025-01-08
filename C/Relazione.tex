@@ -1,0 +1,175 @@
+\documentclass{article}
+\usepackage{amsmath} % Per formule matematiche avanzate
+\usepackage{textcomp} % Per unità di misura
+\usepackage{siunitx} % Per formattare le unità di misura
+
+\title{ Misura della velocità della luce}
+\author{Francesco Giuseppe Minisini, Mattia Monzani, Gabriele Turi}
+
+\begin{document}
+
+\maketitle
+
+\section{Abstract}
+%
+In questo esperimento, è stata misurata la velocità della luce utilizzando il dispositivo di Foucault. L'analisi è stata effettuata osservando, tramite un microscopio, lo spostamento di una macchia luminosa, causato dalla variazione della velocità angolare di uno specchio rotante, e quindi da un diverso angolo di impatto del laser sullo specchio. Il sistema ottico includeva due specchi piani e uno specchio concavo al fine di allungare il percorso del raggio laser. Il valore ottenuto per la velocità della luce è risultato essere \(c=(2.988\pm0.013)\cdot10^8\frac{m}{s}\), con una compatibilità del \(45\%\) rispetto al valore teorico previsto.
+
+\section{Messa a punto dell'apparato sperimentale}
+%
+La prima fase della configurazione prevede la verifica che il raggio laser incida al centro dello specchio rotante. Per questa operazione si utilizza una squadretta fornita in dotazione; sono accettabili scostamenti dell’ordine di \(1-2 \text{ mm}\) tra il foro della squadretta e il punto di incidenza del raggio. Successivamente, si esegue l’operazione di auto-collimazione, orientando il fascio laser in modo che venga riflesso verso il foro di uscita del laser stesso, un accorgimento utile per le fasi successive.
+
+Le due lenti convergenti, \( L_1 \) e \( L_2 \), vengono posizionate rispettivamente a distanze di \(70 \text{mm}\) e \(378 \text{mm}\) rispetto al punto di uscita del laser. La lente \( L_1 \) ha una distanza focale di \( 48 \pm 1 \, \text{mm} \), mentre \( L_2 \) ha una distanza focale di \( 252 \pm 1 \, \text{mm} \). Durante questa operazione è essenziale assicurarsi che il fascio laser incida al centro dello specchio rotante, regolando la posizione delle lenti sia orizzontalmente sia verticalmente. Alla fine di questa fase, la macchia luminosa proiettata sulla squadretta deve avere un diametro di circa \(1\text{cm}\).
+
+
+
+È inoltre fondamentale che la distanza tra le due lenti sia maggiore della somma delle loro distanze focali di \( d > b - f_2 \), come richiesto dalla configurazione ottica. Dalla geometria del sistema, si osserva infatti che il raggio laser incidente è leggermente divergente, il che porta il punto di intersezione \( S \) a trovarsi leggermente oltre il fuoco della prima lente (come mostrato in figura 1).
+
+Poiché \( b \) e \( D + a \) sono legati dall’equazione del costruttore di lenti, \\  \(\frac{1}{b} + \frac{1}{D + a} = \frac{1}{f_2}\)
+è possibile dunque risalire al valore di \( b - f_2 \) approssimabile con \(5\text{mm}\).
+Una volta posizionate le lenti, si inserisce il porta-microscopio tra \( L_1 \) e \( L_2 \), a una distanza di \( 180 \text{mm}\). 
+Lo splitter, inclinato di \( 135^\circ \), lascia passare la luce proveniente dal laser e riflette nel microscopio quella proveniente dallo specchio rotante. Posizionando un foglio di carta traslucida sul porta-microscopio, si verifica che la macchia luminosa sia centrata; in caso contrario, si agisce sulla leva dello splitter o sul micrometro per effettuare le necessarie regolazioni.\\
+Ruotando manualmente la cinghia dello specchio rotante, il fascio laser viene indirizzato verso il centro del primo specchio piano. Regolando le viti micrometriche poste dietro i due specchi piani e lo specchio concavo, si ottiene un fascio di ritorno che segue esattamente la stessa traiettoria del raggio incidente. Per facilitare questa fase, è possibile sovrapporre i due fasci utilizzando un foglio di carta traslucida come riferimento. È importante ricordare che lo specchio concavo, essendo sferico con raggio \( D + a \), riflette comunque il raggio incidente nella stessa direzione anche se quest’ultimo non colpisce il centro esatto dello specchio.  \\
+Con lo specchio rotante fermo, osservando attraverso il microscopio si distingue un punto luminoso su uno sfondo caratterizzato da frange di interferenza. Dopo aver centrato accuratamente la macchia luminosa, agendo sulla leva dello splitter e sul micrometro, si può iniziare la fase di misurazione.
+
+La metodologia dell’esperimento si basa sul fatto che il fascio di ritorno incide sullo specchio rotante quando quest’ultimo è ruotato di una frazione di radiante. Questo comporta uno spostamento del punto luminoso visibile al microscopio, pari a \( \delta d \). Misurando tale spostamento e conoscendo la velocità angolare dello specchio, è possibile calcolare la velocità della luce.
+
+
+\section{Presa dati}
+Completata la messa a punto del sistema, si procede alla raccolta dei dati. Come primo passo, si misura la distanza \(a\) tra la lente \(L_2\) e lo specchio rotante, e successivamente la distanza \(D\) tra lo specchio rotante e lo specchio concavo. Queste misure vengono effettuate simulando il percorso ottico seguito dal raggio laser. Per ottenere un valore migliore le misurazioni delle distanze vengono effettuate due volte da persone diverse.
+
+Una volta concluse le misure preliminari, si avvia il motore dello specchio rotante, impostando la levetta del senso di rotazione su \textbf{CW} (rotazione oraria). Si inizia con una velocità angolare ridotta, nell’ordine di centinaia di giri al secondo. Osservando attraverso il microscopio, si localizza la macchia luminosa e, utilizzando il micrometro, si centra il punto luminoso, annotando il valore indicato. Successivamente, si aumenta la velocità angolare dello specchio rotante fino al massimo valore, superiore a 1000 giri al secondo. La macchia luminosa, a questo punto, appare spostata. Si utilizza quindi il micrometro per centrare nuovamente la macchia e si registra il valore corrispondente.\\
+Questa procedura viene ripetuta per 20 misurazioni consecutive con rotazione in senso orario. In seguito, si sposta la levetta del senso di rotazione su \textbf{CCW} (rotazione antioraria), e si raccolgono altre 20 misurazioni, ripetendo lo stesso processo.\\
+Per completare la raccolta dati, si effettuano ulteriori 20 misurazioni combinando i due sensi di rotazione. Si inizia con lo specchio rotante alla massima velocità in senso antiorario (\textbf{CCW}) e, successivamente, si inverte il senso di rotazione portandolo al massimo in senso orario (\textbf{CW}). In queste condizioni, lo spostamento osservato della macchia luminosa è più marcato rispetto alle precedenti misurazioni, consentendo una maggiore precisione nella determinazione dei dati.
+
+
+
+
+\section{Misurazioni, Calcoli e Analisi Dati}
+
+La distanza $a$ tra la lente \(L_2\) e lo specchio rotante è stata misurata utilizzando un metro rigido con sensibilità di 1 mm, ottenendo il valore \(a = 0.4520 \pm 0.0014 \, \text{m}\). 
+L'incertezza su $a$ è stata determinata utilizzando la formula:
+
+\begin{equation}
+\sigma_\text{\(a\)} = \sqrt{(\sigma_{\text{inizio}})^2 + (\sigma_{\text{fine}})^2},
+\end{equation}
+dove \(\sigma_{\text{inizio}}\) e \(\sigma_{\text{fine}}\), entrambi pari a \(1 \text{mm}\), rappresentano l'incertezza dovuta all'imprecisione nella localizzazione dei punti di inizio e fine della misura.
+Le distanze tra gli specchi sono state misurate utilizzando un metro a nastro con sensibilità di \(\sigma_m=1\text{cm}\). \\
+I risultati delle misurazioni sono riportati nella Tabella \ref{tab:table1}. 
+Sommando le distanze misurate si ottiene il valore complessivo \(D = 13.37 \pm 0.02 \, \text{m}\).
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{\(rot-S_1\)} & \textbf{\(S_1-S_2\)} & \textbf{\(S_2-S_\text{conc}\)} \\ \hline
+        6.28 m        & 0.41 m          & 6.48   m              \\ \hline
+        6.28  m         & 0.41 m          & 6.48  m      \\ \hline
+    \end{tabular}
+    \caption{Valori di distanza misurati}
+    \label{tab:table1}
+\end{table}
+
+L'incertezza su $D$ è stata calcolata considerando che anche in questo caso ogni misura presenta un errore dovuto all'imprecisione nel posizionamento sia del punto di inizio sia del punto di fine.  Ad ogni distanza viene dunque associato un errore pari a \(\sqrt{2}\cdot\sigma_\text{m}\). Poiché ogni distanza è stata misurata due volte, l'incertezza su ogni misura è ridotta di un fattore $\sqrt{2}$, risultando in \(\sigma_\text{m} = 0.01 \, \text{m}\). Propagando gli errori sulla somma delle tre distanze che compongono $D$, l'incertezza complessiva è stata calcolata come:
+
+\begin{equation}
+\sigma_\text{D} = \sqrt{3}  \cdot \sigma_\text{m}.
+\end{equation}
+
+Concluse le misurazioni preliminari, si è proceduto con l'azionamento dello specchio rotante per misurare la variazione di velocità angolare $(\omega - \omega_0)$ e lo spostamento angolare $\Delta \delta$ della macchia luminosa. La velocità della luce è stata determinata utilizzando la formula:
+
+\begin{equation}
+c = \frac{4 f_2 D^2 (\omega - \omega_0)}{(D + a - f_2) \Delta \delta},
+\end{equation}
+
+dove:
+\begin{itemize}
+    \item $f_2$ è la lunghezza focale della lente \(L_2\),
+    \item $D$ è la distanza totale percorsa dal raggio tra gli specchi,
+    \item $a$ è la distanza tra \(L_2\) e lo specchio rotante,
+    \item  \(\omega - \omega_0\) è la variazione della velocità angolare dello specchio rotante,
+    \item $\Delta \delta$ rappresenta lo spostamento angolare della macchia luminosa osservata al microscopio.
+\end{itemize}
+
+La frequenza del motore dello specchio rotante, indicata in giri al secondo, è stata convertita in radianti al secondo moltiplicandola per $2 \pi$.
+
+
+\subsection{Calcolo delle incertezze}
+
+L’errore associato alla misura di c è stato suddiviso in due contributi principali: un contributo derivante dagli errori di misura di \textbf{\(\Delta \omega\)} e di \textbf{\(\Delta \delta\)}, stimabile attraverso metodi statistici, e un errore sistematico dovuto alla propagazione delle incertezze di \(D\), \(f_2\) e \(a\), che influenzano tutte le misurazioni. Quest’ultimo errore anche all’aumentare delle misure effettuate rimane costante.
+
+
+Per il calcolo dell'errore sistematico $\sigma_{c,\text{sist}}$, si è utilizzata la propagazione degli errori con la formula:
+
+\begin{equation}
+\sigma_{c,\text{sist}} = \sqrt{\left(\frac{\partial c}{\partial D} \sigma D\right)^2 + \left(\frac{\partial c}{\partial f_2} \sigma f_2\right)^2 + \left(\frac{\partial c}{\partial a} \sigma a\right)^2}.
+\end{equation}
+L'errore statistico su $c$, invece, è stato stimato utilizzando la deviazione standard della media, calcolata come:
+
+\begin{equation}
+\sigma_{c,\text{stat}} = \frac{\sqrt{\frac{\sum (c_{\text{mis}} - c_{\text{med}})^2}{N-1}}}{\sqrt{N}},
+\end{equation}
+
+dove:
+\begin{itemize}
+    \item $c_{\text{mis}}$ rappresenta i singoli valori misurati della velocità della luce,
+    \item $c_{\text{med}}$ è la media aritmetica di tutti i valori misurati,
+    \item $N$ è il numero totale di misure.
+\end{itemize}
+
+Questa metodologia permette di associare ad ogni misura di \(c\) un'incertezza totale comprensiva sia del contributo statistico sia di quello sistematico.
+
+\subsection{Analisi Dati}
+
+Le prime misurazioni effettuate sono avvenute impostando il verso di rotazione in senso antiorario, poi invertendo il senso, ed infine alternandolo. Di seguito è riportato un esempio e alcune considerazioni per ciascun set di misure.
+
+\subsubsection{rotazione CCW}
+\begin{table}[h!]
+    \centering
+    
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} 
+        \hline
+        $\nu_0$ [Hz] & $\omega_0$ [1/s] & $\delta_0$ [mm] & $\nu$ [Hz] & $\omega$ [1/s] & $\delta$ [mm] &  $c$ [m/s] & S$^2$\\ 
+        \hline
+        131 & 823.1 & 7.46 & 1029 & 6465.4 & 7.71 & 2.997E+08& 8.7E+12\\ 
+        \hline
+    \end{tabular}
+    \caption{Tabella dei dati sperimentali.}
+    \label{tab:dati}
+\end{table}
+Quando è stato preso il primo valore di posizione \(\delta_0 = 7.46 \text{ mm}\), ottenuto posizionando il crocefilo del microscopio al centro della macchia luminosa, il motore dello specchio rotante segnava una frequenza pari a \(\nu_0 = 131 \text{ Hz}\), che, trasformata in radianti al secondo diventa \(\omega_0 = 823.1 \text{ rad/s}\). 
+In seguito, accelerando la velocità di rotazione si nota che la macchia luminosa tende a spostarsi verso il basso, il che implica che il valore finale segnato sul micrometro è maggiore del valore iniziale, in particolare, nel caso esaminato corrisponde a \(\delta=7.72\text{ mm}\). 
+Dopo aver calcolato \(\Delta\omega\) e \(\Delta\delta\), inserendo i valori nella formula (scrivere che formula), si risale al valore di c, pari a \(c=2.997\cdot10^8\frac{m}{s}\). \\
+Per valutare l'errore statistico dovremo prima calcolare la media dei valori ottenuti di \(\text{c}\) per questo set di misure, poi calcolare lo scarto quadratico di ogni misura come \((\text{c}_\text{mis} -\text{c}_\text{med})^2\) . 
+Nel caso esaminato otteniamo un valore fino a 2 ordini di grandezza inferiore rispetto agli scarti di altre misurazioni, essendo il valore ottenuto vicino al valor medio: questo scarto non avrà un contributo rilevante nel calcolo dell'errore statistico.
+
+Dopo aver effettuato 20 misurazioni nel caso antiorario si ottiene un valore pari a: \\
+\(c_\text{CCW}=(3.026\pm 0.027 (\text{stat.}) \pm 0.013(\text{syst.}))\cdot 10^8 \frac{m}{s}\).
+
+Allo stesso modo invertendo il senso di rotazione si ripetono le stesso misurazioni, questa volta considerando \(w\) negativo e ottenendo uno spostamendo della macchia luminosa negativo. In questo caso il valore ottenuto è pari a: \\
+\(c_\text{CW}=(2.989\pm 0.025 (\text{stat.}) \pm 0.013(\text{syst.}))\cdot 10^8 \frac{m}{s}\).
+
+
+Per l'ultimo set, per ogni misurazione, si comincia in senso antiorario (\(w>0)\) e si conclude in senso antiorario (\(w<0)\), in questo modo \(\Delta\omega\) risulta maggiore rispetto agli altri due casi presi in esame, e anche lo spostamento, confrontandolo con le altre misurazioni, risulta ragionevolmente essere circa il doppio.
+Si ottiene dunque:\\ 
+\(c_\text{CCW-CW}=(2.977 \pm 0.010 (\text{stat.}) \pm 0.013 (\text{syst}))\cdot10^8\frac{m}{s}\).\\\\
+Confrontando i tre risultati ottenuti si nota come l'errore sistematico rimane costante, mentre l'errore statistico dell'ultimo set di misurazioni è decisamente inferiore, poichè misurando variazioni maggiori, l'errore relativo su \(\Delta\omega\) e su \(\Delta\delta\) decresce. 
+In altre parole, le misurazioni sono meglio "fittate" attorno al valor medio, ottenendo dunque uno scarto quadratico medio un ordine di grandezza inferiore rispetto agli altri due casi.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+       & \textbf{CCW} & \textbf{CW} & \textbf{CCW-CW} \\ \hline
+        \(<S^2>\) & \(2.7\cdot 10^{14} \frac{m^2}{s^2}\) & \(1.2\cdot 10^{14}\frac{m^2}{s^2}\)    & \(1.9\cdot 10^{13}\frac{m^2}{s^2}\)                 \\ \hline
+        
+    \end{tabular}
+    \caption{Scarti quadratici medi}
+    \label{tab:intestazioni}
+\end{table}
+\section{Conclusioni}
+il valore finale di velocità ottenuto operando una media pesata è di \\
+\(c=(2.988\pm0,013)\cdot10^8\frac{m}{s}\), dove l'incertezza finale include sia il contributo statistico che quello sistematico. \\
+Confrontando il valore ottenuto con il valore noto pari a \(299.792.458 \frac{m}{s}\) si ottiene una compatibilità del \(45\%\), ritenuta ottima.
+
+
+\end{document}
