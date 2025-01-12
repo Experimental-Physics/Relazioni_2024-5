@@ -71,7 +71,7 @@ La misurazione della velocità del moto delle gocce d’olio in caduta per effet
 
 \section{Misurazioni, Calcoli e Analisi Dati}
 
-La prima misura eseguita nell'ambito dell'esperimento di Millikan riguarda lo spessore del distanziatore tra i due elettrodi, con l'obiettivo di calcolare il campo elettrico a partire dalla differenza di potenziale impostata tramite il generatore. Nel nostro esperimento, la misura dello spessore è stata effettuata utilizzando un calibro con sensibilità di \SI{0.1}{mm}, utilizzata come incertezza sulle misurazioni.
+La prima misura eseguita nell'ambito dell'esperimento di Millikan riguarda lo spessore del distanziatore tra i due elettrodi, con l'obiettivo di calcolare il campo elettrico a partire dalla differenza di potenziale impostata tramite il generatore. Nel nostro esperimento, la misura dello spessore è stata effettuata utilizzando un micrometro con sensibilità di \SI{0.01}{mm}, utilizzata come incertezza sulle misurazioni.
 
 Le misurazioni dello spessore sono state effettuate in cinque punti diversi del distanziatore, ottenendo i valori riportati nella Tabella~\ref{tab:distanza_armature}.
 
@@ -83,11 +83,11 @@ Le misurazioni dello spessore sono state effettuate in cinque punti diversi del 
     \toprule
     \textbf{Misura} & \textbf{$d$ [mm]} & $\sigma_d$ [mm] \\
     \midrule
-    1 & 7.56 & 0.10 \\
-    2 & 7.56 & 0.10 \\
-    3 & 7.56 & 0.10 \\
-    4 & 7.57 & 0.10 \\
-    5 & 7.55 & 0.10 \\
+    1 & 7.56 & 0.01 \\
+    2 & 7.56 & 0.01 \\
+    3 & 7.56 & 0.01 \\
+    4 & 7.57 & 0.01 \\
+    5 & 7.55 & 0.01 \\
     \bottomrule
     \end{tabular}
 \end{table}
@@ -95,7 +95,7 @@ Le misurazioni dello spessore sono state effettuate in cinque punti diversi del 
 
 La media dei valori misurati fornisce la stima migliore dello spessore del distanziatore, mentre l'incertezza finale è stata calcolata come deviazione standard della media. Otteniamo così:
 \begin{equation}
-d = (0.00756 \pm 0.00005) \, \mathrm{m}
+d = (7.56 \pm 0.05) \, \mathrm{mm}
 \label{eq:spessore_lamina}
 \end{equation}
 
@@ -111,7 +111,7 @@ L'incertezza sul campo elettrico \( \sigma_E \) si ottiene tramite la propagazio
 \label{eq:incertezza_E}
 \end{equation}
 
-La velocità del moto rettilineo uniforme della goccia d’olio è stata calcolata a partire dalla distanza percorsa \( \Delta z = \SI{0.0005}{m} \), con un'incertezza \( \sigma_{\Delta z} = \SI{0.0001}{m} \) (pari al lato dei quadretti del reticolo di minore dimensione usato come riferimento per la misura delle distanze), e dal tempo \( \Delta t \) impiegato dalla goccia a percorrere tale distanza, misurato con un cronometro manuale. Su ogni intervallo di tempo misurato si è stimata, sulla base dei tempi di reazione umani, un'incertezza sullo start e sullo stop di \( \SI{0.2}{s} \), da cui si ottiene l'incertezza totale su \( \Delta t \):
+La velocità del moto rettilineo uniforme della goccia d’olio è stata calcolata a partire dalla distanza percorsa \( \Delta z = \SI{0.5}{mm} \), con un'incertezza \( \sigma_{\Delta z} = \SI{0.0001}{m} \) (pari al lato dei quadretti del reticolo di minore dimensione usato come riferimento per la misura delle distanze), e dal tempo \( \Delta t \) impiegato dalla goccia a percorrere tale distanza, misurato con un cronometro manuale. Su ogni intervallo di tempo misurato si è stimata, sulla base dei tempi di reazione umani, un'incertezza sullo start e sullo stop di \( \SI{0.2}{s} \), da cui si ottiene l'incertezza totale su \( \Delta t \):
 \begin{equation}
 \sigma_{\Delta t}= \sqrt{(\SI{0.2}{s})^2+ (\SI{0.2}{s})^2} \approx \SI{0.28}{s}
 \label{eq:incertezza_tempo}
@@ -269,14 +269,14 @@ Da notare come alcune di queste misure siano fuori scala rispetto alle altre, co
 
 
 \subsection{Cariche otteute}
-Iterato questo procedimento per 10 gocce diverse abbiamo ottenuto i dati raffigurati nell'istogramma \ref{fig:Istogramma}
+Iterato il procedimento descritto nella sezione precedente per 10 gocce diverse abbiamo ottenuto i dati raffigurati nell'istogramma \ref{fig:Istogramma}. L'istogramma è stato ottenuto raccogliendo le cariche delle varie goccie misurate e dividendone la carica per la miglior stima della caricha elementare, ottenuta attraverso il conto descritto nella sezione successiva.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{Istogramma.png}
     \caption{Multiplo di cariche elementari delle gocce studiate}
     \label{fig:Istogramma}
 \end{figure}
-Attraverso questo istogramma è possibile constatare che più di un quarto delle gocce studiate presentava una carica pari a quella elementare, cioè non è stato necessario dividere per alcun valore quanto ottenuto.
+Attraverso questo istogramma è possibile constatare che più di un quarto delle gocce studiate presentava una carica pari alla nostra miglior stima della carica elementare.
 
 \section{Stima finale della carica elementare}
 
@@ -326,6 +326,8 @@ Individuando un intervallo di confidenza di:
 \begin{equation}
 [-1,625 \times 10^{-19} \, \text{C}, \, -1,657 \times 10^{-19} \, \text{C}]
 \end{equation}
+
+\section{Conclusioni}
 
 Si è dunque successivamente calcolata la compatibilità della misura ottenuta della carica elementare con il valore universalmente noto di, 
 \( -1,6022 \times 10^{-19} \, \text{C} \), ottenendo una compatibilità del 
