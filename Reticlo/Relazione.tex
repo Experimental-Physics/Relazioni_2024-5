@@ -60,9 +60,9 @@ da cui:
 
 \section{Procedura di ortogonalizzazione del reticolo }
 \label{sec:ortogonalizzazione}
-Per lo studio della dispersione cromatica tramite il passaggio attraverso il reticolo da parte di un’onda luminosa (nel caso studiato, emessa da una lampada ai vapori di mercurio) incidente perpendicolarmente rispetto al reticolo, è necessario verificare che il reticolo impiegato sia utilizzato effettivamente, con approssimazione sufficientemente buona, in condizioni di ortogonalità rispetto ai raggi luminosi che ne attraversano le fenditure. Si è stabilito di considerare accettabile un discostamento, rispetto alla condizione di ortogonalità desiderata, inferiore ai 5 primi di grado. Per ottenere l’ortogonalizzazione e misurare tale discostamento angolare, si è impiegata una lampada al sodio e si è misurata la posizione del cannocchiale dell’apparato in corrispondenza di cui la luce non ostacolata dal reticolo, che viene rimosso dalla piattaforma di lavoro, emessa della lampada al sodio risultasse centrata sul crocifilo del cannocchiale. L’incertezza sulle singole posizioni angolari misurate sono state stimate ragionevolmente pari a 2 primi, considerando le difficoltà di lettura delle tacche del nonio. Sono state eseguite 10 misurazioni della posizione angolare centrale rispetto alla lampada, di cui è stato calcolato il valor medio, per ottenerne la migliore stima, e di cui si è stata calcolata la deviazione standard della media, per stimarne l’incertezza, ottenendo: 
+Per lo studio della dispersione cromatica tramite il passaggio attraverso il reticolo da parte di un’onda luminosa (nel caso studiato, emessa da una lampada ai vapori di mercurio) incidente perpendicolarmente rispetto al reticolo, è necessario verificare che il reticolo impiegato sia utilizzato effettivamente, con approssimazione sufficientemente buona, in condizioni di ortogonalità rispetto ai raggi luminosi che ne attraversano le fenditure. Si è stabilito di considerare accettabile un discostamento, rispetto alla condizione di ortogonalità desiderata, inferiore ai 5 primi di grado. Per ottenere l’ortogonalizzazione e misurare tale discostamento angolare, si è impiegata una lampada al sodio e si è misurata la posizione del cannocchiale dell’apparato in corrispondenza di cui la luce non ostacolata dal reticolo, che viene rimosso dalla piattaforma di lavoro, emessa della lampada al sodio risultasse centrata sul crocifilo del cannocchiale. L’incertezza sulle singole posizioni angolari misurate sono state stimate ragionevolmente pari a 2 primi, considerando le difficoltà di lettura delle tacche del nonio. Sono state eseguite 10 misurazioni della posizione angolare centrale rispetto alla lampada, di cui è stato calcolato il valor medio, per ottenerne la migliore stima, il cui errore è stato stimato come \(\frac{\sigma_theta}{\sqrt{10}}\), ottenendo: 
 \[
-\theta_0 = (56.123 \pm 0.004)^\circ.
+\theta_0 = (56.123 \pm 0.011)^\circ.
 \]
 In seguito, dopo aver posto il reticolo sulla piattaforma e aver ruotato essa grossolanamente in modo che ad occhio il reticolo risultasse approssimativamente ortogonale al fascio luminoso, si è lavorato di precisione, misurando la posizione angolare del cannocchiale in corrispondenza della visione sul crocifilo di una delle due bande di interferenza del terzo ordine della luce emessa dalla lampada al sodio, sia sul lato destro che sul lato sinistro rispetto al centro. Siccome la condizione di perpendicolarità tra reticolo e luce incidente su di esso implica che il fenomeno debba essere simmetrico da entrambi i lati, una differenza di posizione angolare tra bande di egual ordine di una stessa lunghezza d’onda a destra e a sinistra indica un’asimmetria e quindi un discostamento dalla condizione di ortogonalità desiderata, da correggere applicando un’adeguata rotazione alla piattaforma su cui poggia il reticolo. 
 Si può dimostrare, tramite considerazioni geometriche, che l’angolo \( \beta \) di cui ruotare il reticolo per raggiungere la condizione di ortogonalità, misurate le posizioni rispetto all’angolo \( \theta_0 \) della banda di diffrazione dai due lati, \( \theta_1 \) e \( \theta_2 \), è in buona approssimazione dato da:
@@ -113,7 +113,7 @@ Misurando dunque la posizione angolare del centro di una riga di emissione di un
 \lambda = \frac{d \sin(\theta)}{k}.
 \]
 
-L’incertezza sulla misurazione di \( \lambda \), per propagazione dell’errore, è calcolabile come:
+L’incertezza sulla misurazione di \( \lambda \), è costituita da una componente statistica (errore su \(\theta\)) e un'altra sistematica, data dall'errore su d precedentemente calcolato:
 
 \[
 \sigma_\lambda = \sqrt{\left(\frac{\partial \lambda}{\partial d} \sigma_d\right)^2 + \left(\frac{\partial \lambda}{\partial \theta} \sigma_\theta\right)^2}.
@@ -209,17 +209,17 @@ A questo punto è, in linea teorica, possibile calcolare i medesimi poteri dispe
 Di seguito sono mostrati i valori ottenuti:
 \begin{table}[H]
     \centering
-    \begin{tabular}{cc}
+    \begin{tabular}{ccc}
     \hline
-    \textbf{D} \([\text{rad}/\text{m}] \) & \textbf{\(\sigma_D\)} \([\text{rad}/\text{m}] \) \\ 
+    \textbf{D} \([\text{rad}/\text{m}] \) & \textbf{\(\sigma_D\)} \([\text{rad}/\text{m}] \) & Errore percentuale\\ 
     \hline
-    \( 1.0 \times 10^6 \) & \( 1.4 \times 10^6 \) \\ 
-    \( 1.0 \times 10^6 \) & \( 4.0 \times 10^5 \) \\ 
-    \( 1.050 \times 10^6 \) & \( 2.6 \times 10^4 \) \\ 
-    \( 1.02 \times 10^6 \) & \( 4.0 \times 10^4 \) \\ 
-    \( 1.001 \times 10^6 \) & \( 2.4 \times 10^4 \) \\ 
-    \( 9.76 \times 10^5 \) & \( 1.9 \times 10^4 \) \\ 
-    \( 9.6 \times 10^5 \) & \( 4.0 \times 10^4 \) \\ 
+    \( 1.0 \times 10^6 \) & \( 1.4 \times 10^6 \) & \( 140\%\) \\ 
+    \( 1.0 \times 10^6 \) & \( 4.0 \times 10^5 \) & \( 40\%\) \\ 
+    \( 1.050 \times 10^6 \) & \( 2.6 \times 10^4 \)& \( 3\%\) \\ 
+    \( 1.02 \times 10^6 \) & \( 4.0 \times 10^4 \) & \( 4\%\) \\ 
+    \( 1.001 \times 10^6 \) & \( 2.4 \times 10^4 \) & \( 3\%\) \\ 
+    \( 9.76 \times 10^5 \) & \( 1.9 \times 10^4 \) & \( 2\%\) \\ 
+    \( 9.6 \times 10^5 \) & \( 4.0 \times 10^4 \) & \( 5\%\) \\ 
     \hline
     \end{tabular}
     \caption{Potere dispersivo del reticolo e relative incertezze.}
