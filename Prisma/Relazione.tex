@@ -22,8 +22,8 @@
 \vspace{9pt}
 \begin{abstract}
 \noindent
-In questa relazione viene documentata la misurazione degli indici di rifrazione di un prisma a base triangolare relativi a varie lunghezze d'onda e la verifica della relazione di Cauchy. La procedura sperimentale richiede, per la messa a punto dell'apparato, la misurazione della posizione angolare centrale \(\theta_0 = (58.783 \pm 0.010)^\circ\) e dell'angolo al vertice del prisma \(\alpha = (60.06 \pm 0.06)^\circ\). Conclusa la configurazione dell'apparato, sono stati misurati gli angoli di deviazione minima \(\delta_{\text{Min}}\) di sette righe dello spettro di emissione di una lampada ai vapori di mercurio, come riportato in Tabella \ref{tab:angoli_deviazione_minima}. Gli indicidi rifrazione associati sono stati calcolati in funzione della lunghezza d'onda, ottenendo i seguenti valori: \(n_{\text{Giallo 1}} = (1.7844 \pm 0.001)\),\(n_{\text{Giallo 2}} = (1.7849 \pm 00017)\),\(n_{\text{Verde}} = (1.7904 \pm 00017)\),\(n_{\text{Azzurro}} = (1.8033 \pm 00017)\),\(n_{\text{Indaco}} = (1.8234 \pm 0.001)\),\(n_{\text{Violetto 1}} = (1.8381 \pm 0.0017)\),\(n_{\text{Violetto 2}} = (1.8401 \pm 0.0017)\).
-Infine, è stata verificata la relazione di Cauchy, ottenendo le costanti \(a = (2.992 \pm 0.008)\) e \(b = (6.41 \pm 0.19) \times 10^{-14} \, \text{m}^2\), con una compatibilità del \(97\%\) secondo il test del \(\chi^2\), testimoniando un buon accordo con il modello teorico.
+In questa relazione viene documentata la misurazione degli indici di rifrazione di un prisma a base triangolare relativi a varie lunghezze d'onda e la verifica della relazione di Cauchy. La procedura sperimentale richiede, per la messa a punto dell'apparato, la misurazione della posizione angolare centrale \(\theta_0 = (58.783 \pm 0.010)^\circ\) e dell'angolo al vertice del prisma \(\alpha = (60.06 \pm 0.06)^\circ\). Conclusa la configurazione dell'apparato, sono stati misurati gli angoli di deviazione minima \(\delta_{\text{Min}}\) di sette righe dello spettro di emissione di una lampada ai vapori di mercurio, come riportato in Tabella \ref{tab:angoli_deviazione_minima}. Gli indicidi rifrazione associati sono stati calcolati in funzione della lunghezza d'onda, ottenendo i seguenti valori: \(n_{\text{Giallo 1}} = (1.7844 \pm 0.001)\),\(n_{\text{Giallo 2}} = (1.7849 \pm 00006)\),\(n_{\text{Verde}} = (1.7904 \pm 00006)\),\(n_{\text{Azzurro}} = (1.8033 \pm 00006)\),\(n_{\text{Indaco}} = (1.8234 \pm 0.001)\),\(n_{\text{Violetto 1}} = (1.8381 \pm 0.0006)\),\(n_{\text{Violetto 2}} = (1.8401 \pm 0.0006)\).
+Infine, è stata verificata la relazione di Cauchy, ottenendo le costanti \(a = (2.992 \pm 0.008)\) e \(b = (6.41 \pm 0.19) \times 10^{-14} \, \text{m}^2\), con una compatibilità del \(13\%\) secondo il test del \(\chi^2\), testimoniando un buon accordo con il modello teorico.
 \vspace{20pt}
 \hrule
 \end{abstract}
@@ -78,9 +78,9 @@ L’incertezza su una misura dell’angolo al vertice del prisma è di conseguen
 \]
 
 Come incertezza sulle misurazioni angolari (misurazioni che sono state tutte riportate al primo, nonostante il nonio impiegato apprezzi anche i mezzi primi, per questioni di difficoltà di lettura delle tacche) condotte durante tutto l’esperimento si è scelta un’incertezza di 2 primi di grado, stimata ragionevolmente considerando le difficoltà di visibilità nella lettura del nonio angolare usato per le misurazioni. 
-Iterando queste misurazioni per 6 volte si sono determinati 6 valori per \( \alpha \), di cui si è ottenuta la miglior stima tramite media aritmetica. L’incertezza finale su \( \alpha \) è stata stimata statisticamente tramite il calcolo della deviazione standard della media delle 6 misurazioni ottenute.
+Iterando queste misurazioni per 6 volte si sono determinati 6 valori per \( \alpha \), di cui si è ottenuta la miglior stima tramite media aritmetica. L’incertezza finale su \( \alpha \) è stata stimata tramite il calcolo della deviazione standard della media, dividendo l'incertezza del singolo \(\alpha\) per la radice del numero di misure eseguite.
 Dunque, \( \alpha \) è risultato pari a:
-\[\alpha = (60.06 \pm 0.06)^\circ.\] 
+\[\alpha = (60.064 \pm 0.019)^\circ.\] 
 
 \section{Misurazioni angoli di deviazione minima}
 Siccome da questo momento in poi dell’esperimento ogni misurazione angolare misurata verrà considerata rispetto alla direzione normale alla lampada di emissione della luce, è essenziale procedere subito con la misurazione della posizione angolare della direzione centrale, modo da esprimere ogni posizione angolare misurata tramite differenza del valore angolare misurato rispetto al valore della posizione angolare centrale.
@@ -100,7 +100,7 @@ L’incertezza \( \sigma_{\delta_{\text{Min}}} \) su \( \delta_{\text{Min}} \) �
 \[
 \sigma_{\delta_{\text{Min}}} = \sqrt{(\sigma_{\theta_0})^2 + (\sigma_{\theta_{\text{Min}}})^2}
 \]
-Per ogni lunghezza d’onda dello spettro di emissione del mercurio sono stati calcolati 5 valori di \( \delta_{\text{Min}} \), di cui si è estratta la media e la deviazione standard della media.
+Per ogni lunghezza d’onda dello spettro di emissione del mercurio sono stati calcolati 5 valori di \( \delta_{\text{Min}} \), di cui si è estratta la media per determinarne la miglior stima. L'incertezza finale sulle migliori stime degli angoli di deviazione minima è ottenibile, per propagazione dell'incertezza, dividendo l'incertezza che vi è identicamente su ognuna delle misurazioni dell'angolo di deviazione minima per la radice quadrata del numero di misure effettuate
 Di seguito i colori delle righe dello spettro di emissione del mercurio che è stato possibile osservare, le loro lunghezze d’onda (note, con incertezza trascurabile), e i rispettivi angoli di deviazione minima misurati tramite il procedimento sopra indicato:
 
 \begin{table}[H]
@@ -108,13 +108,13 @@ Di seguito i colori delle righe dello spettro di emissione del mercurio che è s
     \begin{tabular}{ccc}
     \hline
     \textbf{Colore} & \textbf{\( \lambda \)} & \textbf{\( \delta_{\text{Min}} \)} \\ \hline
-    Giallo 1 & \( 5790 \, \text{\AA} \) & \( (66.4600 \pm 0.0018)^\circ \) \\ 
-    Giallo 2 & \( 5770 \, \text{\AA} \) & \( (66.527 \pm 0.003)^\circ \) \\ 
-    Verde & \( 5461 \, \text{\AA} \) & \( (67.230 \pm 0.004)^\circ \) \\ 
-    Azzurro & \( 4960 \, \text{\AA} \) & \( (68.917 \pm 0.008)^\circ \) \\ 
-    Indaco & \( 4358 \, \text{\AA} \) & \( (71.6633 \pm 0.0028)^\circ \) \\ 
-    Violetto 1 & \( 4077 \, \text{\AA} \) & \( (73.773 \pm 0.006)^\circ \) \\ 
-    Violetto 2 & \( 4047 \, \text{\AA} \) & \( (74.057 \pm 0.004)^\circ \) \\ \hline
+    Giallo 1 & \( 5790 \, \text{\AA} \) & \( (66.460 \pm 0.016)^\circ \) \\ 
+    Giallo 2 & \( 5770 \, \text{\AA} \) & \( (66.527 \pm 0.016)^\circ \) \\ 
+    Verde & \( 5461 \, \text{\AA} \) & \( (67.230 \pm 0.016)^\circ \) \\ 
+    Azzurro & \( 4960 \, \text{\AA} \) & \( (68.917 \pm 0.016)^\circ \) \\ 
+    Indaco & \( 4358 \, \text{\AA} \) & \( (71.6633 \pm 0.016)^\circ \) \\ 
+    Violetto 1 & \( 4077 \, \text{\AA} \) & \( (73.773 \pm 0.016)^\circ \) \\ 
+    Violetto 2 & \( 4047 \, \text{\AA} \) & \( (74.057 \pm 0.016)^\circ \) \\ \hline
     \end{tabular}
     \caption{Angoli di deviazione minima per le righe dello spettro di emissione del mercurio.}
     \label{tab:angoli_deviazione_minima}
@@ -138,13 +138,13 @@ Di seguito sono riportati i valori dell’indice di rifrazione associati ad ogni
 \begin{tabular}{ccc}
 \hline
 \textbf{Colore} & \textbf{\( \lambda \)} & \textbf{\( n \)} \\ \hline
-Giallo 1 & \( 5790 \, \text{\AA} \) & \( 1.7844 \pm 0.0017 \) \\ 
-Giallo 2 & \( 5770 \, \text{\AA} \) & \( 1.7849 \pm 0.0017 \) \\
-Verde & \( 5461 \, \text{\AA} \) & \( 1.7904 \pm 0.0017 \) \\ 
-Azzurro  & \( 4960 \, \text{\AA} \) & \( 1.8033 \pm 0.0017 \) \\ 
-Indaco & \( 4358 \, \text{\AA} \) & \( 1.8234 \pm 0.0017 \) \\ 
-Violetto 1 & \( 4077 \, \text{\AA} \) & \( 1.8381 \pm 0.0017 \) \\ 
-Violetto 2 & \( 4047 \, \text{\AA} \) & \( 1.8401 \pm 0.0017 \) \\ \hline
+Giallo 1 & \( 5790 \, \text{\AA} \) & \( 1.7844 \pm 0.0006 \) \\ 
+Giallo 2 & \( 5770 \, \text{\AA} \) & \( 1.7849 \pm 0.0006 \) \\
+Verde & \( 5461 \, \text{\AA} \) & \( 1.7904 \pm 0.0006 \) \\ 
+Azzurro  & \( 4960 \, \text{\AA} \) & \( 1.8033 \pm 0.0006 \) \\ 
+Indaco & \( 4358 \, \text{\AA} \) & \( 1.8234 \pm 0.0006 \) \\ 
+Violetto 1 & \( 4077 \, \text{\AA} \) & \( 1.8381 \pm 0.0006 \) \\ 
+Violetto 2 & \( 4047 \, \text{\AA} \) & \( 1.8401 \pm 0.0006 \) \\ \hline
 \end{tabular}
 \caption{Indici di rifrazione calcolati per le diverse lunghezze d’onda dello spettro di emissione del mercurio.}
 \label{tab:indici_rifrazione}
@@ -170,7 +170,7 @@ a = 2.992 \pm 0.008
 b = (6.41 \pm 0.19) \times 10^{-14} \, \text{m}^2
 \]
 
-Il test del \( \chi^2 \) restituisce un accordo del \( 97 \% \), rappresentando un risultato ampiamente soddisfacente.
+Il test del \( \chi^2 \) restituisce un accordo del \( 13\% \), rappresentando un risultato ampiamente soddisfacente.
 
 \begin{figure}[H]
     \centering
